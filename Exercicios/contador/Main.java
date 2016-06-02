@@ -9,6 +9,7 @@ class Main {
   public static void main(String[] sdsd)  {
      new Main();
   }
+
   Main() {
     JFrame f = new JFrame();
     //f.add(new Jbutton());  //eh possivel apos jdk1.5
@@ -28,6 +29,7 @@ class Main {
     f.setVisible(true);
    
   }
+
   //usando "grid layout" (botoes "em grade")
   void gui(JPanel quadro,
                   ActionListener listener,
@@ -53,6 +55,7 @@ class Main {
     mk_grupoContagem(q, listener); //1ra linha
     mk_grupoMemorizacao(q, listener); //2da linha
   }
+
   void mk_grupoContagem(JPanel q, ActionListener listener) {
     JButton b;
     b = new JButton("+");
@@ -72,6 +75,7 @@ class Main {
 
     q.add(new JLabel()); //espaco vazio
   }
+
   void mk_grupoMemorizacao(JPanel q, ActionListener listener) {
     JButton b;
     b = new JButton("MS");
@@ -94,9 +98,11 @@ class Main {
     b.addActionListener(listener);
     b.setActionCommand("ADICIONAR");
   }
+
   void cfg_rotulo(JLabel rotulo) {//default
     cfg_rotulo(rotulo,SwingConstants.RIGHT,120,15,Color.blue,Color.lightGray);
   }
+  
   void cfg_rotulo(JLabel rotulo, int hpos, int lar, int alt, Color fcor, Color bcor) {
     //fonte
     rotulo.setFont(new Font("Verdana", Font.BOLD, 12));

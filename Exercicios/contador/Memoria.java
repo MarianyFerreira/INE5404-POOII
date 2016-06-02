@@ -9,23 +9,34 @@ ex-01 - incluir a funcionalidade "memorizacao" (modo classico):
 . MC ("memory clear": limpar)
 . M+ ("memory add": adicionar)
 */
-
-
 class Memoria {
-  private int m = 0;
-  void ms(int n) { debug();
-    m = n;
+
+  private int dado = 0;
+
+  void memStore(int n) {
+    debug();
+    dado = n;
   }
-  int mr() { debug();
-    return m;  
+
+  int memRecall() {
+    debug();
+    return dado;  
   }
-  void mc() { debug();
-    m = 0;
+
+  void memClear() {
+    debug();
+    dado = 0;
   }
-  void mplus(int n) { debug();
-    m = m + n;
+
+  void memPlus(int n) {
+    debug();
+    dado = dado + n;
   }
 
   private boolean debug = true;
-  void debug() { if (debug) System.out.println("m = "+ m);}
+
+  void debug() {
+    if (debug)
+      System.out.println("dado = "+ dado);
+  }
 }//

@@ -6,10 +6,10 @@ import javax.swing.*;
 class Contador implements ActionListener {
   private int n = 0;
   private JLabel r;
-  private Memoria m;
-  Contador(JLabel r, Memoria m) {
+  private Memoria mem;
+  Contador(JLabel r, Memoria mem) {
     this.r = r;
-    this.m = m;
+    this.mem = mem;
   }
   void incrementar() {
     n = n + 1;
@@ -36,16 +36,16 @@ class Contador implements ActionListener {
        zerar();
     }
     else if (cmd.equals("ARMAZENAR")) {
-       m.ms(n);
+       mem.memStore(n);
     }
     else if (cmd.equals("RECUPERAR")) {
-       n = m.mr();
+       n = mem.memRecall();
     }
     else if (cmd.equals("LIMPAR")) {
-       m.mc();
+       mem.memClear();
     }
     else if (cmd.equals("ADICIONAR")) {
-       m.mplus(n);
+       mem.memPlus(n);
     }
     atualizar();
   }//()
