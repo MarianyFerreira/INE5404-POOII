@@ -1,5 +1,9 @@
-# INE5404-POOII
+Federal University of Santa Catarina
 
-INE5404 - Object-Oriented Programming II
+Computer Science Course
 
-Repository related to exercises, tests and work of the practical part of the course INE5404 Object-Oriented Programming II.
+INE5404 - Object-oriented programming II
+
+
+
+This repository contains exercises, tests and work practice of the discipline of Object-Oriented Programming II.
